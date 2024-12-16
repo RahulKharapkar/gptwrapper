@@ -20,7 +20,8 @@ public class    ChatController {
         this.chatService = chatService;
     }
 
-    @CrossOrigin(origins = "https://rahulkharapkar.github.io")
+    @CrossOrigin(
+            origins = {"http://localhost:5173","https://rahulkharapkar.github.io"})
     @PostMapping
     public ResponseEntity<ChatResponse> sendChatRequest(@RequestBody ChatRequest chatRequest) {
         // Only set default model if it's missing or empty
