@@ -16,6 +16,7 @@ public class ChatService {
                 .build();
     }
 
+
     public ChatResponse sendChatRequest(ChatRequest chatRequest) {
         // Send the POST request and map the response to ChatResponse
         return webClient.post()
